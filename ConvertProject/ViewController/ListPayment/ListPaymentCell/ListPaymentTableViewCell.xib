@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListPaymentTableViewCell" rowHeight="82" id="KGk-i7-Jjw" customClass="ListPaymentTableViewCell" customModule="ConvertProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="81.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWh-p1-q8s">
+                        <rect key="frame" x="10" y="10" width="80" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="r03-Yp-9hy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8l-Xu-wjO">
+                        <rect key="frame" x="100" y="10" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Table :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwl-Ts-dRh">
+                        <rect key="frame" x="10" y="37" width="80" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="II9-zJ-Wfp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wz6-4n-6yl">
+                        <rect key="frame" x="100" y="37" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWi-zk-leE">
+                        <rect key="frame" x="10" y="64" width="80" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="jYG-6u-4Bg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYv-ag-lt1">
+                        <rect key="frame" x="100" y="64" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pWi-zk-leE" firstAttribute="top" secondItem="kwl-Ts-dRh" secondAttribute="bottom" constant="10" id="2ho-3W-q65"/>
+                    <constraint firstItem="wz6-4n-6yl" firstAttribute="leading" secondItem="kwl-Ts-dRh" secondAttribute="trailing" constant="10" id="DbE-RY-tVT"/>
+                    <constraint firstItem="pWi-zk-leE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="FYc-UO-8qA"/>
+                    <constraint firstItem="LWh-p1-q8s" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="FZ2-MJ-1vn"/>
+                    <constraint firstItem="kwl-Ts-dRh" firstAttribute="top" secondItem="LWh-p1-q8s" secondAttribute="bottom" constant="10" id="YmZ-sr-uEk"/>
+                    <constraint firstItem="lYv-ag-lt1" firstAttribute="leading" secondItem="pWi-zk-leE" secondAttribute="trailing" constant="10" id="bYF-36-1gr"/>
+                    <constraint firstItem="LWh-p1-q8s" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="cni-zb-JlO"/>
+                    <constraint firstItem="l8l-Xu-wjO" firstAttribute="top" secondItem="LWh-p1-q8s" secondAttribute="top" id="q6B-6t-VFO"/>
+                    <constraint firstItem="l8l-Xu-wjO" firstAttribute="leading" secondItem="LWh-p1-q8s" secondAttribute="trailing" constant="10" id="qE0-4a-Sm2"/>
+                    <constraint firstItem="kwl-Ts-dRh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="tnW-Kw-OWf"/>
+                    <constraint firstItem="wz6-4n-6yl" firstAttribute="top" secondItem="kwl-Ts-dRh" secondAttribute="top" id="uT0-56-a4B"/>
+                    <constraint firstItem="lYv-ag-lt1" firstAttribute="top" secondItem="pWi-zk-leE" secondAttribute="top" id="yRs-4K-y4K"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblDate" destination="l8l-Xu-wjO" id="OaJ-PN-Z5y"/>
+                <outlet property="lblPrice" destination="lYv-ag-lt1" id="hVm-89-i7l"/>
+                <outlet property="lblTable" destination="wz6-4n-6yl" id="uvQ-pD-4Hn"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="73"/>
+        </tableViewCell>
+    </objects>
+</document>

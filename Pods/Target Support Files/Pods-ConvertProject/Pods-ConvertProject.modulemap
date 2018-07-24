@@ -1,0 +1,6 @@
+framework module Pods_ConvertProject {
+  umbrella header "Pods-ConvertProject-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListPaymentViewController" customModule="ConvertProject" customModuleProvider="target">
+            <connections>
+                <outlet property="tblView" destination="Gxq-Eo-NPB" id="KUp-2J-GOC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="czt-4l-VgE">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_back.png" translatesAutoresizingMaskIntoConstraints="NO" id="evH-rL-JAZ">
+                            <rect key="frame" x="10" y="30" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="Poe-93-EW9"/>
+                                <constraint firstAttribute="height" constant="24" id="yiE-Mr-hkJ"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDQ-Vf-XTA">
+                            <rect key="frame" x="0.0" y="20" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="LES-PD-oGa"/>
+                            </constraints>
+                            <connections>
+                                <action selector="onBack:" destination="-1" eventType="touchUpInside" id="0P1-QK-Lap"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List Payment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cb3-jz-oZc">
+                            <rect key="frame" x="49" y="31.5" width="277" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.51764705879999995" green="0.14117647059999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="cb3-jz-oZc" firstAttribute="centerY" secondItem="GDQ-Vf-XTA" secondAttribute="centerY" id="HsJ-bp-WjP"/>
+                        <constraint firstItem="GDQ-Vf-XTA" firstAttribute="top" secondItem="czt-4l-VgE" secondAttribute="top" constant="20" id="O4V-Gh-e0z"/>
+                        <constraint firstItem="evH-rL-JAZ" firstAttribute="centerX" secondItem="GDQ-Vf-XTA" secondAttribute="centerX" id="RVs-f3-lyY"/>
+                        <constraint firstItem="cb3-jz-oZc" firstAttribute="leading" secondItem="GDQ-Vf-XTA" secondAttribute="trailing" constant="5" id="YKR-Pl-Vu7"/>
+                        <constraint firstAttribute="bottom" secondItem="GDQ-Vf-XTA" secondAttribute="bottom" id="hh9-Ao-gRc"/>
+                        <constraint firstAttribute="height" constant="64" id="lYH-kW-TWa"/>
+                        <constraint firstItem="GDQ-Vf-XTA" firstAttribute="leading" secondItem="czt-4l-VgE" secondAttribute="leading" id="mKj-Nh-o0l"/>
+                        <constraint firstAttribute="trailing" secondItem="cb3-jz-oZc" secondAttribute="trailing" constant="49" id="rWq-ej-asE"/>
+                        <constraint firstItem="evH-rL-JAZ" firstAttribute="centerY" secondItem="GDQ-Vf-XTA" secondAttribute="centerY" id="yPz-eg-IsM"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gxq-Eo-NPB">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="czt-4l-VgE" secondAttribute="trailing" id="4Bm-ZY-rvc"/>
+                <constraint firstItem="czt-4l-VgE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Hz1-fc-t0D"/>
+                <constraint firstAttribute="trailing" secondItem="Gxq-Eo-NPB" secondAttribute="trailing" id="VeJ-yB-KtX"/>
+                <constraint firstAttribute="bottom" secondItem="Gxq-Eo-NPB" secondAttribute="bottom" id="nVs-dI-tU1"/>
+                <constraint firstItem="Gxq-Eo-NPB" firstAttribute="top" secondItem="czt-4l-VgE" secondAttribute="bottom" id="pLS-Mi-jQk"/>
+                <constraint firstItem="czt-4l-VgE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="peP-yr-QXh"/>
+                <constraint firstItem="Gxq-Eo-NPB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ue0-eJ-hA9"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_back.png" width="24" height="24"/>
+    </resources>
+</document>
